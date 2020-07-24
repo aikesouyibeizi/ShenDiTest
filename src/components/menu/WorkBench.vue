@@ -98,6 +98,11 @@ export default {
     props:{
         
     },
+    data(){
+        return {
+            activeName:"first"
+        }
+    },
     mounted(){
         this.drawLineChart()
     },
@@ -268,7 +273,7 @@ export default {
 
 }
 .workBench .content .left{
-    width: 1020px;
+    width: 80%;
 }
 .workBench .content .left .statistical-title,
 .workBench .content .left .mine-title{
@@ -282,7 +287,8 @@ export default {
     margin-bottom: 20px;
 }
 .workBench .content .left .mine-content .mine-item{
-    width: 320px;
+    /* width: 320px; */
+    width: 33%;
     height: 130px;
     background-color: #8688DD;
     margin-right: 20px;
@@ -294,14 +300,16 @@ export default {
 }
 .workBench .content .left .statistical-content .province,
 .workBench .content .left .statistical-content .gold{
-    width: 1005px;
+    width: 98.5%;
+    /* width: 1005px; */
     height: 232px;
     background-color: #fff;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 /* ===right=== */
 .workBench .content .right{
-    widows: 300px;
+    /* width: 300px; */
     margin-left: 20px;
     margin-top: -20px;
     display: flex;

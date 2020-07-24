@@ -78,6 +78,7 @@ export default {
 }
 .el-menu li:last-child .manage{
     line-height: 60px;
+    cursor: pointer;
 }
 .el-menu li:last-child img{
     vertical-align: middle;
